@@ -40,12 +40,19 @@ h1 {
     color: #252525;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
 /*Main content */
 main {
     background-color: lightblue;
     /* Make main content take up the whole extra space to push the footer down */
     flex: 1 0 auto;
 }
+
 
 /* Footer */
 footer {
