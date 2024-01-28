@@ -83,10 +83,16 @@ nav {
 
 /*Main content */
 main {
-  background-color: lightblue;
   /* Make main content take up the whole extra space to push the footer down */
   flex: 1 0 auto;
   margin-top: 47px;
+}
+
+/* Hero content */
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url('../images/hero-image.webp') no-repeat center center/cover;
 }
 
 /* Footer */
@@ -99,9 +105,9 @@ main {
 }
 
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color:#3a3a3a;
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
