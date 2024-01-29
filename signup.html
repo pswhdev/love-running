@@ -64,36 +64,38 @@
           <h2>
             <i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!
           </h2>
-          <label for="first_name">First Name</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder="First name"
-            aria-label="Please enter your first name"
-            required
-          />
-          <br />
-          <label for="last_name">Last Name</label>
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            placeholder="Last name"
-            aria-label="Please enter your last name"
-            required
-          />
-          <br />
-          <label for="email_address">Email Address</label>
-          <input
-            type="email"
-            name="email_address"
-            id="email_address"
-            placeholder="Email Address"
-            aria-label="Please enter your email address"
-            required
-          />
-          <br />
+          <div >
+            <label for="first_name">First Name</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              class="text-input"
+              aria-label="Please enter your first name"
+              required
+            />
+            <br />
+            <label for="last_name">Last Name</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              class="text-input"
+              aria-label="Please enter your last name"
+              required
+            />
+            <br />
+            <label for="email_address">Email Address</label>
+            <input
+              type="email"
+              name="email_address"
+              id="email_address"
+              class="text-input"
+              aria-label="Please enter your email address"
+              required
+            />
+            <br />
+          </div>
           <div class="radio_buttons">
             <input
               type="radio"
@@ -103,7 +105,7 @@
               required
             />
             <label for="road">Road</label>
-            <br>
+
             <input
               type="radio"
               id="trail"
@@ -111,7 +113,7 @@
               value="Trail"
             />
             <label for="trail">Trail</label>
-            <br>
+
             <input
               type="radio"
               id="both"
@@ -119,9 +121,8 @@
               value="Both"
             />
             <label for="both">Both</label>
-            <br>
           </div>
-          <input class="join-button" type="Submit" value="Let's run!">
+          <input class="join-button" type="Submit" value="Let's run!" />
         </form>
       </section>
     </main>
