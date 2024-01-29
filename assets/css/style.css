@@ -28,7 +28,7 @@ h3 {
 }
 
 .hidden-heading {
-    display: none;
+  display: none;
 }
 
 /* Header */
@@ -176,27 +176,26 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   text-align: center;
-/* This will not wrap on screens less than 400px wide and each div will expand to fill the available space on its row */
+  /* This will not wrap on screens less than 400px wide and each div will expand to fill the available space on its row */
   flex-basis: 200px;
   flex-grow: 1;
-/* Creates a grid of meetup times over the background image */
+  /* Creates a grid of meetup times over the background image */
   border: 2px solid white;
 }
 
 /* Overrides the headings colour set in general styles */
 #times h3 {
-    color: #fafafa;
-
+  color: #fafafa;
 }
 
 /* Gallery page */
 #photos img {
-    width: 100%;
-    line-height: 1em;
+  width: 100%;
+  line-height: 1em;
 }
 
 #photos {
-line-height: 0;
+  line-height: 0;
 }
 
 /* Footer */
@@ -212,6 +211,14 @@ line-height: 0;
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+/* Media query: larger or landscape mobiles (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -271,12 +278,20 @@ line-height: 0;
     text-align: end;
     align-self: flex-end;
   }
+  /*Gallery */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+  /*Gallery */
+  #photos {
+    column-count: 4;
   }
 }
 
